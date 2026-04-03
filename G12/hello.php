@@ -42,15 +42,15 @@
     echo "Operateurs arithmetiques : + - * / %";
     echo "<br>";
     echo "<br>";
-    echo '$x + $y <=> ' . "$x + $y = " . ($x + $y); // addition
+    echo 'Addition : $x + $y <=> ' . "$x + $y = " . ($x + $y);
     echo "<br>";
-    echo '$x - $y <=> ' . "$x - $y = " . ($x - $y); // soustraction
+    echo 'Soustraction : $x - $y <=> ' . "$x - $y = " . ($x - $y);
     echo "<br>";
-    echo '$x * $y <=> ' . "$x * $y = " . ($x * $y); // multiplication
+    echo 'Multiplication : $x * $y <=> ' . "$x * $y = " . ($x * $y);
     echo "<br>";
-    echo '$x / $y <=> ' . "$x / $y = " . ($x / $y); // division
+    echo 'Division : $x / $y <=> ' . "$x / $y = " . ($x / $y);
     echo "<br>";
-    echo '$x % $y <=> ' . "$x % $y = " . ($x % $y); // modulo
+    echo 'Modulo : $x % $y <=> ' . "$x % $y = " . ($x % $y);
 ?>
 </body>
 </html>
