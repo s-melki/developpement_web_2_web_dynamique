@@ -1,0 +1,42 @@
+
+Organiser un mini-projet structuré avec MVC
+
+Structure complete du projet
+projet_MVC/
+|
++-- config/
+|   +-- database.php        [TP1 — aucune modification]
+|   +-- auth.php            [NOUVEAU] fonctions requireLogin / requireAdmin
+|
++-- models/
+|   +-- User.php            [TP1 — ajouter 4 methodes]
+|   +-- Task.php            [NOUVEAU] modele complet des taches
+|
++-- controllers/
+|   +-- authController.php  [TP1 — ajouter 1 ligne : role en session]
+|   +-- userController.php  [NOUVEAU] CRUD utilisateurs (admin)
+|   +-- taskController.php  [NOUVEAU] CRUD taches (admin + user)
+|
++-- views/
+|   +-- login.php           [TP1 — aucune modification]
+|   +-- dashboard.php       [TP1 — modifier : menu selon le role]
+|   |
+|   +-- admin/
+|   |   +-- users/
+|   |   |   +-- list.php    [NOUVEAU]
+|   |   |   +-- create.php  [NOUVEAU]
+|   |   |   +-- edit.php    [NOUVEAU]
+|   |   +-- tasks/
+|   |       +-- list.php    [NOUVEAU]
+|   |       +-- create.php  [NOUVEAU]
+|   |       +-- edit.php    [NOUVEAU]
+|   |
+|   +-- user/
+|       +-- tasks/
+|           +-- list.php    [NOUVEAU] espace 'Mes taches'
+|
++-- public/
+|   +-- style.css           [FOURNI] feuille de style partagee
+|
++-- logout.php              [TP1 — aucune modification]
++-- index.php               [TP1 — aucune modification]
