@@ -1,6 +1,7 @@
-<?php 
-
-session_start();
+<?php
+    session_start();
+    require_once __DIR__ . "/../config/auth.php";
+    requireAdmin();
 ?>
 
 <!DOCTYPE html>
@@ -56,8 +57,8 @@ session_start();
 </head>
 <body>
 <?php
-$username=$_SESSION["user"]["username"];
-$role=$_SESSION["user"]["role"];
+    $username = $_SESSION["user"]["username"];
+    $role     = $_SESSION["user"]["role"];
 ?>
 <header>
      <h1>Gestion des Tâches</h1>
@@ -77,7 +78,7 @@ $role=$_SESSION["user"]["role"];
         <div class="icon">👥</div>
          <div class="title">Gérer les utilisateurs</div>
         </a>
-         <a class="menu-card" href="">
+         <a class="menu-card" href="../controllers/taskController.php?action=list">
         <div class="icon">👥</div>
          <div class="title">Gérer les taches</div>
         </a>

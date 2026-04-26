@@ -7,8 +7,9 @@
 sil non existance de ce user ->rederige vers la page login */
 function requireLogin()
 {
-    if (!isset($_SESSION["user"])) {
-        header("Location: /views/login.php");
+    if (! isset($_SESSION["user"])) {
+        // header("Location: /views/login.php");
+        header("Location: http://localhost/developpement_web_2_web_dynamique/tp_session_MVC/login.php");
         exit();
     }
 }
